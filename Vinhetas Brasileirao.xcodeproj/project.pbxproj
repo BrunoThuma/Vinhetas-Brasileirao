@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5ED39BBE28FD80D100AA7D72 /* PadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED39BBD28FD80D100AA7D72 /* PadsView.swift */; };
+		5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */; };
+		5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3728F2598500EFEED5 /* ContentView.swift */; };
+		5EFA0A3A28F2598700EFEED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3928F2598700EFEED5 /* Assets.xcassets */; };
+		5EFA0A3D28F2598700EFEED5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3C28F2598700EFEED5 /* Preview Assets.xcassets */; };
+		5EFA0A3F28F2598700EFEED5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3E28F2598700EFEED5 /* Persistence.swift */; };
+		5EFA0A4228F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A4028F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld */; };
+		5EFA0A4C28F2598800EFEED5 /* Vinhetas_BrasileiraoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A4B28F2598800EFEED5 /* Vinhetas_BrasileiraoTests.swift */; };
+		5EFA0A5628F2598800EFEED5 /* Vinhetas_BrasileiraoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A5528F2598800EFEED5 /* Vinhetas_BrasileiraoUITests.swift */; };
+		5EFA0A5828F2598800EFEED5 /* Vinhetas_BrasileiraoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A5728F2598800EFEED5 /* Vinhetas_BrasileiraoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EFA0A4828F2598800EFEED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EFA0A2A28F2598500EFEED5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EFA0A3128F2598500EFEED5;
+			remoteInfo = "Vinhetas Brasileirao";
+		};
+		5EFA0A5228F2598800EFEED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EFA0A2A28F2598500EFEED5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EFA0A3128F2598500EFEED5;
+			remoteInfo = "Vinhetas Brasileirao";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5ED39BBD28FD80D100AA7D72 /* PadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadsView.swift; sourceTree = "<group>"; };
+		5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vinhetas Brasileirao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinhetas_BrasileiraoApp.swift; sourceTree = "<group>"; };
+		5EFA0A3728F2598500EFEED5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5EFA0A3928F2598700EFEED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EFA0A3C28F2598700EFEED5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5EFA0A3E28F2598700EFEED5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5EFA0A4128F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vinhetas_Brasileirao.xcdatamodel; sourceTree = "<group>"; };
+		5EFA0A4728F2598800EFEED5 /* Vinhetas BrasileiraoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vinhetas BrasileiraoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFA0A4B28F2598800EFEED5 /* Vinhetas_BrasileiraoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinhetas_BrasileiraoTests.swift; sourceTree = "<group>"; };
+		5EFA0A5128F2598800EFEED5 /* Vinhetas BrasileiraoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vinhetas BrasileiraoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFA0A5528F2598800EFEED5 /* Vinhetas_BrasileiraoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinhetas_BrasileiraoUITests.swift; sourceTree = "<group>"; };
+		5EFA0A5728F2598800EFEED5 /* Vinhetas_BrasileiraoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinhetas_BrasileiraoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EFA0A2F28F2598500EFEED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA0A4428F2598800EFEED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA0A4E28F2598800EFEED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EFA0A2928F2598500EFEED5 = {
+			isa = PBXGroup;
+			children = (
+				5EFA0A3428F2598500EFEED5 /* Vinhetas Brasileirao */,
+				5EFA0A4A28F2598800EFEED5 /* Vinhetas BrasileiraoTests */,
+				5EFA0A5428F2598800EFEED5 /* Vinhetas BrasileiraoUITests */,
+				5EFA0A3328F2598500EFEED5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EFA0A3328F2598500EFEED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */,
+				5EFA0A4728F2598800EFEED5 /* Vinhetas BrasileiraoTests.xctest */,
+				5EFA0A5128F2598800EFEED5 /* Vinhetas BrasileiraoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EFA0A3428F2598500EFEED5 /* Vinhetas Brasileirao */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */,
+				5EFA0A3728F2598500EFEED5 /* ContentView.swift */,
+				5EFA0A3928F2598700EFEED5 /* Assets.xcassets */,
+				5EFA0A3E28F2598700EFEED5 /* Persistence.swift */,
+				5EFA0A4028F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld */,
+				5EFA0A3B28F2598700EFEED5 /* Preview Content */,
+				5ED39BBD28FD80D100AA7D72 /* PadsView.swift */,
+			);
+			path = "Vinhetas Brasileirao";
+			sourceTree = "<group>";
+		};
+		5EFA0A3B28F2598700EFEED5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA0A3C28F2598700EFEED5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5EFA0A4A28F2598800EFEED5 /* Vinhetas BrasileiraoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA0A4B28F2598800EFEED5 /* Vinhetas_BrasileiraoTests.swift */,
+			);
+			path = "Vinhetas BrasileiraoTests";
+			sourceTree = "<group>";
+		};
+		5EFA0A5428F2598800EFEED5 /* Vinhetas BrasileiraoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5EFA0A5528F2598800EFEED5 /* Vinhetas_BrasileiraoUITests.swift */,
+				5EFA0A5728F2598800EFEED5 /* Vinhetas_BrasileiraoUITestsLaunchTests.swift */,
+			);
+			path = "Vinhetas BrasileiraoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EFA0A3128F2598500EFEED5 /* Vinhetas Brasileirao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EFA0A5B28F2598800EFEED5 /* Build configuration list for PBXNativeTarget "Vinhetas Brasileirao" */;
+			buildPhases = (
+				5EFA0A2E28F2598500EFEED5 /* Sources */,
+				5EFA0A2F28F2598500EFEED5 /* Frameworks */,
+				5EFA0A3028F2598500EFEED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vinhetas Brasileirao";
+			productName = "Vinhetas Brasileirao";
+			productReference = 5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EFA0A4628F2598800EFEED5 /* Vinhetas BrasileiraoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EFA0A5E28F2598800EFEED5 /* Build configuration list for PBXNativeTarget "Vinhetas BrasileiraoTests" */;
+			buildPhases = (
+				5EFA0A4328F2598800EFEED5 /* Sources */,
+				5EFA0A4428F2598800EFEED5 /* Frameworks */,
+				5EFA0A4528F2598800EFEED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EFA0A4928F2598800EFEED5 /* PBXTargetDependency */,
+			);
+			name = "Vinhetas BrasileiraoTests";
+			productName = "Vinhetas BrasileiraoTests";
+			productReference = 5EFA0A4728F2598800EFEED5 /* Vinhetas BrasileiraoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5EFA0A5028F2598800EFEED5 /* Vinhetas BrasileiraoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EFA0A6128F2598800EFEED5 /* Build configuration list for PBXNativeTarget "Vinhetas BrasileiraoUITests" */;
+			buildPhases = (
+				5EFA0A4D28F2598800EFEED5 /* Sources */,
+				5EFA0A4E28F2598800EFEED5 /* Frameworks */,
+				5EFA0A4F28F2598800EFEED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EFA0A5328F2598800EFEED5 /* PBXTargetDependency */,
+			);
+			name = "Vinhetas BrasileiraoUITests";
+			productName = "Vinhetas BrasileiraoUITests";
+			productReference = 5EFA0A5128F2598800EFEED5 /* Vinhetas BrasileiraoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EFA0A2A28F2598500EFEED5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					5EFA0A3128F2598500EFEED5 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					5EFA0A4628F2598800EFEED5 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 5EFA0A3128F2598500EFEED5;
+					};
+					5EFA0A5028F2598800EFEED5 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 5EFA0A3128F2598500EFEED5;
+					};
+				};
+			};
+			buildConfigurationList = 5EFA0A2D28F2598500EFEED5 /* Build configuration list for PBXProject "Vinhetas Brasileirao" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EFA0A2928F2598500EFEED5;
+			productRefGroup = 5EFA0A3328F2598500EFEED5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EFA0A3128F2598500EFEED5 /* Vinhetas Brasileirao */,
+				5EFA0A4628F2598800EFEED5 /* Vinhetas BrasileiraoTests */,
+				5EFA0A5028F2598800EFEED5 /* Vinhetas BrasileiraoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EFA0A3028F2598500EFEED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFA0A3D28F2598700EFEED5 /* Preview Assets.xcassets in Resources */,
+				5EFA0A3A28F2598700EFEED5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA0A4528F2598800EFEED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA0A4F28F2598800EFEED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EFA0A2E28F2598500EFEED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFA0A3F28F2598700EFEED5 /* Persistence.swift in Sources */,
+				5EFA0A4228F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld in Sources */,
+				5ED39BBE28FD80D100AA7D72 /* PadsView.swift in Sources */,
+				5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */,
+				5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA0A4328F2598800EFEED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFA0A4C28F2598800EFEED5 /* Vinhetas_BrasileiraoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EFA0A4D28F2598800EFEED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EFA0A5828F2598800EFEED5 /* Vinhetas_BrasileiraoUITestsLaunchTests.swift in Sources */,
+				5EFA0A5628F2598800EFEED5 /* Vinhetas_BrasileiraoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EFA0A4928F2598800EFEED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EFA0A3128F2598500EFEED5 /* Vinhetas Brasileirao */;
+			targetProxy = 5EFA0A4828F2598800EFEED5 /* PBXContainerItemProxy */;
+		};
+		5EFA0A5328F2598800EFEED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EFA0A3128F2598500EFEED5 /* Vinhetas Brasileirao */;
+			targetProxy = 5EFA0A5228F2598800EFEED5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5EFA0A5928F2598800EFEED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EFA0A5A28F2598800EFEED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EFA0A5C28F2598800EFEED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vinhetas Brasileirao/Preview Content\"";
+				DEVELOPMENT_TEAM = UY7S7HWX9K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.brunothuma.Vinhetas-Brasileirao";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EFA0A5D28F2598800EFEED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vinhetas Brasileirao/Preview Content\"";
+				DEVELOPMENT_TEAM = UY7S7HWX9K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.brunothuma.Vinhetas-Brasileirao";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5EFA0A5F28F2598800EFEED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UY7S7HWX9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.brunothuma.Vinhetas-BrasileiraoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vinhetas Brasileirao.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vinhetas Brasileirao";
+			};
+			name = Debug;
+		};
+		5EFA0A6028F2598800EFEED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UY7S7HWX9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.brunothuma.Vinhetas-BrasileiraoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vinhetas Brasileirao.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vinhetas Brasileirao";
+			};
+			name = Release;
+		};
+		5EFA0A6228F2598800EFEED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UY7S7HWX9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.brunothuma.Vinhetas-BrasileiraoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vinhetas Brasileirao";
+			};
+			name = Debug;
+		};
+		5EFA0A6328F2598800EFEED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UY7S7HWX9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.brunothuma.Vinhetas-BrasileiraoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vinhetas Brasileirao";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EFA0A2D28F2598500EFEED5 /* Build configuration list for PBXProject "Vinhetas Brasileirao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EFA0A5928F2598800EFEED5 /* Debug */,
+				5EFA0A5A28F2598800EFEED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EFA0A5B28F2598800EFEED5 /* Build configuration list for PBXNativeTarget "Vinhetas Brasileirao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EFA0A5C28F2598800EFEED5 /* Debug */,
+				5EFA0A5D28F2598800EFEED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EFA0A5E28F2598800EFEED5 /* Build configuration list for PBXNativeTarget "Vinhetas BrasileiraoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EFA0A5F28F2598800EFEED5 /* Debug */,
+				5EFA0A6028F2598800EFEED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EFA0A6128F2598800EFEED5 /* Build configuration list for PBXNativeTarget "Vinhetas BrasileiraoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EFA0A6228F2598800EFEED5 /* Debug */,
+				5EFA0A6328F2598800EFEED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5EFA0A4028F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5EFA0A4128F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodel */,
+			);
+			currentVersion = 5EFA0A4128F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodel */;
+			path = Vinhetas_Brasileirao.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5EFA0A2A28F2598500EFEED5 /* Project object */;
+}
