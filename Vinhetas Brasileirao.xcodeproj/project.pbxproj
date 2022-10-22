@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E6D38E729045B5500C29733 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E6D38E629045B5500C29733 /* GoogleService-Info.plist */; };
+		5E6D38EA29045CF400C29733 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E6D38E929045CF400C29733 /* FirebaseFirestore */; };
+		5E6D38EC29045CF400C29733 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E6D38EB29045CF400C29733 /* FirebaseStorage */; };
 		5ED39BBE28FD80D100AA7D72 /* PadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED39BBD28FD80D100AA7D72 /* PadsView.swift */; };
 		5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */; };
 		5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3728F2598500EFEED5 /* ContentView.swift */; };
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E6D38E629045B5500C29733 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5ED39BBD28FD80D100AA7D72 /* PadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadsView.swift; sourceTree = "<group>"; };
 		5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vinhetas Brasileirao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinhetas_BrasileiraoApp.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6D38EA29045CF400C29733 /* FirebaseFirestore in Frameworks */,
+				5E6D38EC29045CF400C29733 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,7 @@
 				5EFA0A4028F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld */,
 				5EFA0A3B28F2598700EFEED5 /* Preview Content */,
 				5ED39BBD28FD80D100AA7D72 /* PadsView.swift */,
+				5E6D38E629045B5500C29733 /* GoogleService-Info.plist */,
 			);
 			path = "Vinhetas Brasileirao";
 			sourceTree = "<group>";
@@ -152,6 +159,10 @@
 			dependencies = (
 			);
 			name = "Vinhetas Brasileirao";
+			packageProductDependencies = (
+				5E6D38E929045CF400C29733 /* FirebaseFirestore */,
+				5E6D38EB29045CF400C29733 /* FirebaseStorage */,
+			);
 			productName = "Vinhetas Brasileirao";
 			productReference = 5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 5EFA0A2928F2598500EFEED5;
+			packageReferences = (
+				5E6D38E829045CF400C29733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5EFA0A3328F2598500EFEED5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -242,6 +256,7 @@
 			files = (
 				5EFA0A3D28F2598700EFEED5 /* Preview Assets.xcassets in Resources */,
 				5EFA0A3A28F2598700EFEED5 /* Assets.xcassets in Resources */,
+				5E6D38E729045B5500C29733 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +610,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E6D38E829045CF400C29733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E6D38E929045CF400C29733 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E6D38E829045CF400C29733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5E6D38EB29045CF400C29733 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E6D38E829045CF400C29733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5EFA0A4028F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld */ = {
