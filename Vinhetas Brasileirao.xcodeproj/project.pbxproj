@@ -15,6 +15,8 @@
 		5E6D38FE290509CF00C29733 /* FirebaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D38FD290509CF00C29733 /* FirebaseModule.swift */; };
 		5E6D390029050D1300C29733 /* FilesPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D38FF29050D1300C29733 /* FilesPersistence.swift */; };
 		5EC2115D290580890016D3CA /* TeamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2115C290580890016D3CA /* TeamsModel.swift */; };
+		5EC2116029059E560016D3CA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5EC2115F29059E560016D3CA /* FirebaseAuth */; };
+		5EC2116229059F370016D3CA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2116129059F370016D3CA /* LoginView.swift */; };
 		5ED39BBE28FD80D100AA7D72 /* PadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED39BBD28FD80D100AA7D72 /* PadsView.swift */; };
 		5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */; };
 		5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3728F2598500EFEED5 /* ContentView.swift */; };
@@ -51,6 +53,7 @@
 		5E6D38FD290509CF00C29733 /* FirebaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModule.swift; sourceTree = "<group>"; };
 		5E6D38FF29050D1300C29733 /* FilesPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesPersistence.swift; sourceTree = "<group>"; };
 		5EC2115C290580890016D3CA /* TeamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsModel.swift; sourceTree = "<group>"; };
+		5EC2116129059F370016D3CA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5ED39BBD28FD80D100AA7D72 /* PadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadsView.swift; sourceTree = "<group>"; };
 		5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vinhetas Brasileirao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinhetas_BrasileiraoApp.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6D38EA29045CF400C29733 /* FirebaseFirestore in Frameworks */,
+				5EC2116029059E560016D3CA /* FirebaseAuth in Frameworks */,
 				5E6D38EC29045CF400C29733 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +97,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EC2115E29059E560016D3CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5EFA0A2928F2598500EFEED5 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +111,7 @@
 				5EFA0A4A28F2598800EFEED5 /* Vinhetas BrasileiraoTests */,
 				5EFA0A5428F2598800EFEED5 /* Vinhetas BrasileiraoUITests */,
 				5EFA0A3328F2598500EFEED5 /* Products */,
+				5EC2115E29059E560016D3CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +130,7 @@
 			children = (
 				5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */,
 				5EFA0A3728F2598500EFEED5 /* ContentView.swift */,
+				5EC2116129059F370016D3CA /* LoginView.swift */,
 				5EFA0A3928F2598700EFEED5 /* Assets.xcassets */,
 				5EFA0A3E28F2598700EFEED5 /* Persistence.swift */,
 				5EFA0A4028F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld */,
@@ -177,6 +190,7 @@
 			packageProductDependencies = (
 				5E6D38E929045CF400C29733 /* FirebaseFirestore */,
 				5E6D38EB29045CF400C29733 /* FirebaseStorage */,
+				5EC2115F29059E560016D3CA /* FirebaseAuth */,
 			);
 			productName = "Vinhetas Brasileirao";
 			productReference = 5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */;
@@ -304,6 +318,7 @@
 				5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */,
 				5E6D390029050D1300C29733 /* FilesPersistence.swift in Sources */,
 				5E6D38FE290509CF00C29733 /* FirebaseModule.swift in Sources */,
+				5EC2116229059F370016D3CA /* LoginView.swift in Sources */,
 				5EC2115D290580890016D3CA /* TeamsModel.swift in Sources */,
 				5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */,
 			);
@@ -652,6 +667,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5E6D38E829045CF400C29733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		5EC2115F29059E560016D3CA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E6D38E829045CF400C29733 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 

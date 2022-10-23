@@ -26,28 +26,34 @@ struct PadsView: View {
                     forRelativeLocalPath: "audios/coritiba.m4a",
                     forRemotePath: "audios/coritiba.m4a",
                     completion: didSaveFile)
-            }.buttonStyle(.borderedProminent)
+            }
+                .buttonStyle(.borderedProminent)
             Button("Play Downloaded") {
-                playAudio(fromUrl: downloadedTeams[0].audioLocalAbsoluteUrl!)
-            }.buttonStyle(.borderedProminent)
+                if downloadedTeams.count > 0 {
+                    playAudio(fromUrl: downloadedTeams[0].audioLocalAbsoluteUrl!)
+                } else {
+                    myText = "No files to be played locally"
+                }
+                
+            }
+                .buttonStyle(.borderedProminent)
             Button("List Downloaded") {
                 _ = getDownloadedUrlsList()
-            }.buttonStyle(.borderedProminent)
-//            Button("Play From Memory") {
-//                playFromMemory()
-//                print("is asynchronous")
-//            }.buttonStyle(.borderedProminent)
+            }
+                .buttonStyle(.borderedProminent)
             Button("Clear") {
                 persistenceManager.clearDocumentsFolder()
+                myText = "Cleaned all files in documents folder"
             }
-            .buttonStyle(.bordered)
-            .foregroundColor(.red)
+                .buttonStyle(.bordered)
+                .foregroundColor(.red)
         }.onAppear(perform: fetchDownloadedTeams)
     }
     
     func didSaveFile(toUrl url: URL) {
         downloadedFileURL = url
-        myText = "ok"
+        myText = "Successfully downloaded \(url.lastPathComponent)"
+        fetchDownloadedTeams()
     }
     
     private func playAudio(fromUrl url: URL) {

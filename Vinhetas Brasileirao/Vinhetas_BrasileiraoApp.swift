@@ -18,8 +18,7 @@ struct Vinhetas_BrasileiraoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            
-            PadsView()
+            ContentView()
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
