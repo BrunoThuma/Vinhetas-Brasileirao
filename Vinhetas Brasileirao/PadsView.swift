@@ -15,6 +15,8 @@ struct PadsView: View {
     
     @State private var myText: String?
     @State private var downloadedFileURL: URL!
+    @State private var downloadedTeams: [TeamsModel] = []
+    @State private var remoteTeams: [TeamsModel] = []
     
     var body: some View {
         VStack {
@@ -26,7 +28,10 @@ struct PadsView: View {
                     completion: didSaveFile)
             }.buttonStyle(.borderedProminent)
             Button("Play Downloaded") {
-                playAudio(fromUrl: downloadedFileURL)
+                playAudio(fromUrl: downloadedTeams[0].audioLocalAbsoluteUrl!)
+            }.buttonStyle(.borderedProminent)
+            Button("List Downloaded") {
+                _ = getDownloadedUrlsList()
             }.buttonStyle(.borderedProminent)
 //            Button("Play From Memory") {
 //                playFromMemory()
@@ -37,7 +42,7 @@ struct PadsView: View {
             }
             .buttonStyle(.bordered)
             .foregroundColor(.red)
-        }
+        }.onAppear(perform: fetchDownloadedTeams)
     }
     
     func didSaveFile(toUrl url: URL) {
@@ -48,6 +53,32 @@ struct PadsView: View {
     private func playAudio(fromUrl url: URL) {
         audioPlayerManager.play(url: url)
         print("Succesfully played audio")
+    }
+    
+    private func fetchDownloadedTeams() {
+        let audiosUrls: [URL] = persistenceManager.getDownloadedAudios()
+        
+        for audioUrl in audiosUrls {
+            let teamName = audioUrl.deletingPathExtension().lastPathComponent
+            
+            var team = TeamsModel(name: teamName)
+            team.audioLocalAbsoluteUrl = audioUrl
+            team.audioLocalRelativePath = audioUrl.relativePath
+            print("fetched \(teamName) saved at \(team.audioLocalRelativePath ?? "")")
+            self.downloadedTeams.append(team)
+        }
+    }
+    
+    private func getDownloadedUrlsList() -> [URL] {
+        let audiosUrls: [URL] = persistenceManager.getDownloadedAudios()
+        
+        myText = "Listing audios in documents/audios \n"
+        
+        for audioUrl in audiosUrls {
+            myText! += "\(audioUrl.deletingPathExtension().lastPathComponent) \n"
+        }
+        
+        return audiosUrls
     }
 }
 

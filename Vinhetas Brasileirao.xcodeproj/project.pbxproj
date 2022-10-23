@@ -14,6 +14,7 @@
 		5E6D38FC2905026700C29733 /* ContentsDirectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D38FB2905026700C29733 /* ContentsDirectories.swift */; };
 		5E6D38FE290509CF00C29733 /* FirebaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D38FD290509CF00C29733 /* FirebaseModule.swift */; };
 		5E6D390029050D1300C29733 /* FilesPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D38FF29050D1300C29733 /* FilesPersistence.swift */; };
+		5EC2115D290580890016D3CA /* TeamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2115C290580890016D3CA /* TeamsModel.swift */; };
 		5ED39BBE28FD80D100AA7D72 /* PadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED39BBD28FD80D100AA7D72 /* PadsView.swift */; };
 		5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */; };
 		5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3728F2598500EFEED5 /* ContentView.swift */; };
@@ -49,6 +50,7 @@
 		5E6D38FB2905026700C29733 /* ContentsDirectories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsDirectories.swift; sourceTree = "<group>"; };
 		5E6D38FD290509CF00C29733 /* FirebaseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModule.swift; sourceTree = "<group>"; };
 		5E6D38FF29050D1300C29733 /* FilesPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesPersistence.swift; sourceTree = "<group>"; };
+		5EC2115C290580890016D3CA /* TeamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsModel.swift; sourceTree = "<group>"; };
 		5ED39BBD28FD80D100AA7D72 /* PadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadsView.swift; sourceTree = "<group>"; };
 		5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vinhetas Brasileirao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinhetas_BrasileiraoApp.swift; sourceTree = "<group>"; };
@@ -119,13 +121,14 @@
 				5EFA0A3928F2598700EFEED5 /* Assets.xcassets */,
 				5EFA0A3E28F2598700EFEED5 /* Persistence.swift */,
 				5EFA0A4028F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld */,
-				5EFA0A3B28F2598700EFEED5 /* Preview Content */,
 				5ED39BBD28FD80D100AA7D72 /* PadsView.swift */,
+				5EC2115C290580890016D3CA /* TeamsModel.swift */,
 				5E6D38FF29050D1300C29733 /* FilesPersistence.swift */,
 				5E6D38FD290509CF00C29733 /* FirebaseModule.swift */,
 				5E6D38F92904FEDB00C29733 /* AudioPlayerManager.swift */,
 				5E6D38FB2905026700C29733 /* ContentsDirectories.swift */,
 				5E6D38E629045B5500C29733 /* GoogleService-Info.plist */,
+				5EFA0A3B28F2598700EFEED5 /* Preview Content */,
 			);
 			path = "Vinhetas Brasileirao";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */,
 				5E6D390029050D1300C29733 /* FilesPersistence.swift in Sources */,
 				5E6D38FE290509CF00C29733 /* FirebaseModule.swift in Sources */,
+				5EC2115D290580890016D3CA /* TeamsModel.swift in Sources */,
 				5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

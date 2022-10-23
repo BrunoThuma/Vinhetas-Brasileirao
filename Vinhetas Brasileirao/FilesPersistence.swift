@@ -6,13 +6,23 @@ struct FilesPersistence {
     private let fmDefault = FileManager.default
     private let documentsDirectory: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     
+    
+    
+    func getDocumentsFolderUrl() -> URL {
+        return documentsDirectory
+    }
+    
+    func getAbsoluteUrl(forRelativePath path: String) -> URL {
+        return documentsDirectory.appending(path: path)
+    }
+    
     func downloadAudioFromFirebase(forRelativeLocalPath localPath: String, forRemotePath remotePath: String, completion: @escaping (URL) -> Void) {
         
         let localFileURL = documentsDirectory.appending(
             path: localPath,
             directoryHint: .notDirectory)
         
-        var fileExists: Bool = fmDefault.fileExists(atPath: localFileURL.path())
+        let fileExists: Bool = fileExistsLocaly(atRelativePath: localPath)
         
         if !fileExists {
             firebaseStorage.downloadFile(
@@ -23,6 +33,14 @@ struct FilesPersistence {
             completion(localFileURL)
             print("File already exists")
         }
+    }
+    
+    func fileExistsLocaly(atRelativePath path: String) -> Bool {
+        let localFileUrl = documentsDirectory.appending(
+            path: path,
+            directoryHint: .notDirectory)
+        
+        return fmDefault.fileExists(atPath: localFileUrl.path())
     }
     
     func clearDocumentsFolder() {
@@ -41,12 +59,28 @@ struct FilesPersistence {
         }
     }
     
-    private func listContentsOfDirectory() -> [URL] {
+    func getDownloadedAudios() -> [URL] {
+        listContentsOfDirectory(relativePath: "audios/")
+    }
+    
+    func getDownloadedImages() -> [URL] {
+        listContentsOfDirectory(relativePath: "images/")
+    }
+    
+    private func listContentsOfDirectory(relativePath: String? = nil) -> [URL] {
         guard let documentsDirectory = fmDefault.urls(for: .documentDirectory, in: .userDomainMask).first else { return [] }
 
         do {
-            let directoryContents = try fmDefault.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: nil, options: [])
+            let directoryContents: [URL]
+            if let path = relativePath {
+                let specifiedDirectory = documentsDirectory.appending(path: path, directoryHint: .isDirectory)
+                directoryContents = try fmDefault.contentsOfDirectory(at: specifiedDirectory, includingPropertiesForKeys: nil, options: [])
+            } else {
+                directoryContents = try fmDefault.contentsOfDirectory(at: documentsDirectory, includingPropertiesForKeys: nil, options: [])
+            }
+            
             return directoryContents
+            
         } catch {
             print("Could not search for urls of files in documents directory: \(error)")
         }

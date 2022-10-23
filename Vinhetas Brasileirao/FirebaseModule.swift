@@ -47,4 +47,20 @@ struct FirebaseModule {
             }
         }
     }
+    
+    func listItemsIn(directory: String, completion: () -> Void) {
+        let storageReference = rootStorageRef.child(directory)
+        
+        let itemsList: [String] = []
+        
+        storageReference.listAll { (result, error) in
+            if let error = error {
+                print("Error listing items in remote directory \(directory): \(error)")
+            } else if result != nil && error == nil {
+                let items = result!.items
+                
+            }
+            
+        }
+    }
 }
