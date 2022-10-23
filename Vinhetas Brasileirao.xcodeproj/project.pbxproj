@@ -11,6 +11,7 @@
 		5E6D38EA29045CF400C29733 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E6D38E929045CF400C29733 /* FirebaseFirestore */; };
 		5E6D38EC29045CF400C29733 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E6D38EB29045CF400C29733 /* FirebaseStorage */; };
 		5E6D38FA2904FEDB00C29733 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D38F92904FEDB00C29733 /* AudioPlayerManager.swift */; };
+		5E6D38FC2905026700C29733 /* ContentsDirectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D38FB2905026700C29733 /* ContentsDirectories.swift */; };
 		5ED39BBE28FD80D100AA7D72 /* PadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED39BBD28FD80D100AA7D72 /* PadsView.swift */; };
 		5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */; };
 		5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA0A3728F2598500EFEED5 /* ContentView.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		5E6D38E629045B5500C29733 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5E6D38F92904FEDB00C29733 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		5E6D38FB2905026700C29733 /* ContentsDirectories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsDirectories.swift; sourceTree = "<group>"; };
 		5ED39BBD28FD80D100AA7D72 /* PadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadsView.swift; sourceTree = "<group>"; };
 		5EFA0A3228F2598500EFEED5 /* Vinhetas Brasileirao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vinhetas Brasileirao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFA0A3528F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vinhetas_BrasileiraoApp.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				5EFA0A3B28F2598700EFEED5 /* Preview Content */,
 				5ED39BBD28FD80D100AA7D72 /* PadsView.swift */,
 				5E6D38F92904FEDB00C29733 /* AudioPlayerManager.swift */,
+				5E6D38FB2905026700C29733 /* ContentsDirectories.swift */,
 				5E6D38E629045B5500C29733 /* GoogleService-Info.plist */,
 			);
 			path = "Vinhetas Brasileirao";
@@ -287,6 +290,7 @@
 				5EFA0A3F28F2598700EFEED5 /* Persistence.swift in Sources */,
 				5E6D38FA2904FEDB00C29733 /* AudioPlayerManager.swift in Sources */,
 				5EFA0A4228F2598700EFEED5 /* Vinhetas_Brasileirao.xcdatamodeld in Sources */,
+				5E6D38FC2905026700C29733 /* ContentsDirectories.swift in Sources */,
 				5ED39BBE28FD80D100AA7D72 /* PadsView.swift in Sources */,
 				5EFA0A3828F2598500EFEED5 /* ContentView.swift in Sources */,
 				5EFA0A3628F2598500EFEED5 /* Vinhetas_BrasileiraoApp.swift in Sources */,

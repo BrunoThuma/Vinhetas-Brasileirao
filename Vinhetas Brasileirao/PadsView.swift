@@ -14,7 +14,6 @@ struct PadsView: View {
         return Storage.storage()
     } ()
     
-    
     private let fmDefault = FileManager.default
     private let documentsDirectory: URL = {
         // find all possible documents directories for this user
@@ -53,8 +52,6 @@ struct PadsView: View {
     
     private func clearDocumentsFolder() {
         let contents: [URL] = listContentsOfDirectory()
-        
-        
         do {
             print("removing \(contents.count) items from documents directory")
             for c in contents {
@@ -67,7 +64,7 @@ struct PadsView: View {
     
     private func playFromMemory() {
         // Create a reference to the file you want to download
-        let rootFolderRef = getFirebaseStorageReference()
+        let rootFolderRef = storage.reference()
         let audioFileRef = rootFolderRef.child("audios/paysandu.m4a")
         
         // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
@@ -79,7 +76,6 @@ struct PadsView: View {
             }
         }
     }
-    
     
     private func listContentsOfDirectory() -> [URL] {
         guard let documentsDirectory = fmDefault.urls(for: .documentDirectory, in: .userDomainMask).first else { return [] }
@@ -97,23 +93,12 @@ struct PadsView: View {
     }
     
     private func storeAudioFromFirebase() {
-        let directoryUrl = documentsDirectory.appendingPathComponent("audios", isDirectory: true)
-        
-        do {
-            try fmDefault.createDirectory(at: directoryUrl, withIntermediateDirectories: true)
-            print("Directory Creation -> Success \n \(directoryUrl)")
-        } catch {
-            print("Directory Creation -> Failed")
-        }
-        
-        let localFileURL = directoryUrl.appending(path: "paysandu.m4a", directoryHint: .notDirectory)
+        let localFileURL = documentsDirectory.appending(path: "audios/paysandu.m4a", directoryHint: .notDirectory)
         print("localFileURL.path \(localFileURL.path())")
         
-        var fileExists: Bool = true
-        fileExists = fmDefault.fileExists(atPath: localFileURL.path())
-        print("fileExists -> \(fileExists)")
+        var fileExists: Bool = fmDefault.fileExists(atPath: localFileURL.path())
         
-        let rootFolderRef = getFirebaseStorageReference()
+        let rootFolderRef = storage.reference()
         let audioFileRef = rootFolderRef.child("audios/paysandu.m4a")
         
         if !fileExists {
@@ -123,21 +108,6 @@ struct PadsView: View {
         } else {
             downloadedFileURL = localFileURL
             print("File already exists")
-        }
-    }
-    
-    private func getFirebaseStorageReference(forPath path: String? = nil) -> StorageReference {
-        // Get a reference to the storage service using the default Firebase App
-        // I created it as computed property
-
-        // Create a storage reference from our storage service
-        let storageRef = storage.reference()
-        
-        // Get child if path for folder is specified
-        if path != nil {
-            return storageRef.child("audios")
-        } else {
-            return storageRef
         }
     }
     
